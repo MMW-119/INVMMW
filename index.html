@@ -337,7 +337,7 @@
                 </div>
                 <div class="recipient-box">
                     <!-- NOUVEAU : Titre d'invitation en arabe rassurant -->
-                    <div class="invitation-title-text"><span>👆</span> بطاقة دعوة </div>
+                    <div class="invitation-title-text"><span>👆</span> بــــطــاقـة دعـــوة </div>
                     <div id="recipientName" class="recipient-name-text"></div>
                     <div class="buttons-row">
                         <button class="action-btn maps-btn" id="mapsButton">
@@ -458,7 +458,7 @@
 
         mapsButton.addEventListener('click', (event) => {
             event.stopPropagation();
-            window.open("https://maps.app.goo.gl/fRxRzG4eXCShHXqs9", '_blank');
+            window.open("https://maps.app.goo.gl/F1CkBSKwH1f2dXNb7", '_blank');
         });
 
         calendarButton.addEventListener('click', (e) => {
@@ -471,9 +471,9 @@
                 "DTSTAMP:20260517T120000Z",
                 "DTSTART:20260822T173000Z",
                 "DTEND:20260822T200000Z",
-                "SUMMARY:Mariage de Sami & Khadija 💍",
-                "DESCRIPTION:Célébration du mariage à l'hôtel Golden Carthage Gammarth.",
-                "LOCATION:Golden Carthage Gammarth, Tunisie",
+                "SUMMARY:Mariage de Med Mourad & Wifak 💍",
+                "DESCRIPTION:Célébration du mariage à l'hôtel Four Seasons Gammarth.",
+                "LOCATION:Four Seasons Gammarth, Tunisie",
                 "END:VEVENT",
                 "END:VCALENDAR"
             ].join("\r\n");
@@ -490,7 +490,7 @@
                 const blob = new Blob([icsContent], { type: "text/calendar;charset=utf-8;" });
                 const link = document.createElement("a");
                 link.href = window.URL.createObjectURL(blob);
-                link.setAttribute("download", "Mariage_Sami_Khadija.ics");
+                link.setAttribute("download", "Mariage_Med_Mourad_&_Wifak.ics");
                 document.body.appendChild(link);
                 link.click();
                 document.body.removeChild(link);
