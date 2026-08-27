@@ -15,10 +15,10 @@
 
     <style>
         :root{
-            --beige: #ebe6d2;         /* couleur principale demandée */
-            --beige-contrast: #f6f4ee;/* légère variante pour la carte intérieure */
+            --beige: #f9ebdd;         /* couleur unique de toute l'enveloppe */         /* couleur principale demandée */
+            --beige-contrast: #f9ebdd;/* même couleur pour la carte intérieure *//* légère variante pour la carte intérieure */
             --accent: #10069F;        /* couleur Pantone existante */
-            --btn-border: #d6cfbf;    /* bordure boutons assortie */
+            --btn-border: #f9ebdd;    /* bordure des boutons dans la même teinte */    /* bordure boutons assortie */
             --shadow-dark: rgba(0,0,0,0.08);
             --glow: rgba(0,127,255,0.18);
         }
@@ -121,7 +121,7 @@
             z-index: 3;
             display: flex;
             flex-direction: column;
-            box-shadow: inset 0 0 20px rgba(0,0,0,0.02), inset 0 0 0 3px rgba(255,255,255,0.92), inset 0 0 0 4px rgba(0,0,0,0.02);
+            box-shadow: inset 0 0 20px rgba(0,0,0,0.02), inset 0 0 0 3px #f9ebdd, inset 0 0 0 4px #f9ebdd;
         }
         .envelope-art {
             width: 100%;
@@ -276,7 +276,7 @@
             white-space: nowrap;
         }
         .maps-btn, .calendar-btn, .audio-btn {
-            background-color: #ffffff; /* boutons blancs pour contraste sur beige */
+            background-color: #f9ebdd; /* boutons dans la même couleur que l'enveloppe */
             color: var(--accent) !important; /* Texte des boutons en Pantone 072 C */
             border: 1px solid var(--btn-border);
             padding: 6px 12px;
@@ -295,7 +295,7 @@
         }
 
         .maps-btn:hover, .calendar-btn:hover, .audio-btn:hover {
-            background-color: #fbfbfb;
+            background-color: #f9ebdd;
             border-color: var(--accent) !important;
         }
 
@@ -333,7 +333,7 @@
             </div>
             <div class="front-face">
                 <div class="envelope-art">
-                    <img src="https://i.ibb.co/LzJn2pxs/env.png" alt="Illustration">
+                    <img src="https://ibb.co/KpV1T9CF" alt="Illustration">
                 </div>
                 <div class="recipient-box">
                     <!-- NOUVEAU : Titre d'invitation en arabe rassurant -->
